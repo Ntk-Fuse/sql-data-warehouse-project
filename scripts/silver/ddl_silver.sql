@@ -31,7 +31,7 @@ CREATE TABLE silver.crm_prd_info (
 	prd_key NVARCHAR(50),
 	prd_nm NVARCHAR(50),
 	prd_cost INT,
-	prd_line NVARCHAR(10),
+	prd_line NVARCHAR(50),
 	prd_start_dt DATE,
 	prd_end_dt DATE,
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
@@ -79,6 +79,6 @@ CREATE TABLE silver.erp_px_cat_g1v2 (
 	id NVARCHAR(50),
 	cat NVARCHAR(50),
 	subcat NVARCHAR(50),
-	maintenance NVARCHAR(20),
+	maintenance NVARCHAR(50),
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
